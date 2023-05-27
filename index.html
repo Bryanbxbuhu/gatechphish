@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA Phishing Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #00254C;
+            color: #B3A369;
+            font-family: 'Georgia', serif;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .names {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">The TA phishing project has been completed on <span id="date"></span></h1>
+        <div class="names">
+            <p>Christopher A Kelly</p>
+            <p>Dahir A Mohamed</p>
+            <p>Bryan Naranjo</p>
+            <p>Marco A Myers</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toLocaleString();
+    </script>
+</body>
+</html>
